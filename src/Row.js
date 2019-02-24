@@ -55,12 +55,12 @@ export default class Row extends Component {
       return this._active && (this.props.horizontal ? vx > vy : vy > vx);
     },
 
-    onShouldBlockNativeResponder: () => {
+    //onShouldBlockNativeResponder: () => {
       // Returns whether this component should block native components from becoming the JS
       // responder. Returns true by default. Is currently only supported on android.
       // NOTE: Returning false here allows us to scroll unless it's a long press on a row.
-      return false;
-    },
+      //return false;
+//    },
 
     onPanResponderGrant: (e, gestureState) => {
       e.persist();
